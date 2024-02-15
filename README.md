@@ -2,5 +2,8 @@
 # Heading 1
 ## Heading 2
 ### Heading 3
+# This is my first image
+
+![image](images/118607990_10158894281252022_2887958017542155055_n.jpg)
 
 This is dummy portfolio to showcase my work
