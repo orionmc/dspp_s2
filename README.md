@@ -1,2 +1,6 @@
 # dspp_s2
-This is dummy portfolio to showcase the work
+# Heading 1
+## Heading 2
+### Heading 3
+
+This is dummy portfolio to showcase my work
