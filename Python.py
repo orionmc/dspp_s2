@@ -18,14 +18,16 @@ with open(csv_file_path, mode='r') as file:
     # Position to the beginning of the file and read again 
     file.seek(0)
     csv_reader = csv.reader(file)
-    ''' 
+    
     # Iterate over each row in the CSV file
     for row in csv_reader:
         # Format each cell in the row with appropriate width
         formatted_row = [cell.ljust(width) for cell, width in zip(row, column_widths)]
         # Join the formatted cells with a separator (space) and print
         print('  '.join(formatted_row))
-    '''
-    null_count = csv_reader.isnull().sum()
-    print(null_count)
+    
+
+    
+    #null_count = csv_reader.isnull().sum()
+    #print(null_count)
 
