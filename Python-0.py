@@ -18,14 +18,14 @@ matplotlib.style.use('ggplot')
 from sklearn.preprocessing import LabelEncoder
 
 
-
+# Load the data & various visualizations & checks
 heartds=pd.read_csv('C:\\Users\\user0\\Documents\\BPP\\DS-Proffessional-Practice\\_DataSets\\Heart-Attack\\heart0.csv')
 heartds.head()
 heartds.info()
 heartds[heartds.duplicated()]
 heartds.describe()
-# heartds.describe().T # rotated to 180 degrees
-# heartds.dtypes
+# heartds.describe().T # matrix rotated to 90 degrees
 
+# pick suitable colour for the plot and draw the correlation plot
 px.imshow(heartds.corr(),title="Correlation Plot",color_continuous_scale="viridis")
 
