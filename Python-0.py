@@ -103,7 +103,7 @@ x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
 # x_train,x_test
 
-# Support Vector Machine
+# Support Vector Classification
 model = SVC()
 model.fit(x_train, y_train)
 predicted = model.predict(x_test)
