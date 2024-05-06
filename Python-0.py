@@ -107,7 +107,7 @@ x_test = scaler.transform(x_test)
 model = SVC()
 model.fit(x_train, y_train)
 predicted = model.predict(x_test)
-print("The accuracy of SVM algorithm is: ", accuracy_score(y_test, predicted)*100, "%")
+print("The accuracy of SVC algorithm is: ", accuracy_score(y_test, predicted)*100, "%")
 
 # # Random Forest
 model = RandomForestRegressor(n_estimators = 100, random_state = 0)  
