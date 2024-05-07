@@ -19,10 +19,10 @@ from sklearn.svm import SVC
 warnings.filterwarnings("ignore")
 
 
- #pd.set_option("display.max_rows",None)
- #matplotlib.style.use('ggplot')
+# pd.set_option("display.max_rows",None)
+# matplotlib.style.use('ggplot')
 
- # Load the data & various visualizations & checks
+# Load the data & various visualizations & checks
 heartds=pd.read_csv('C:\\Users\\user0\\Documents\\BPP\\DS-Proffessional-Practice\\_DataSets\\Heart-Attack\\heart0.csv')
 heartds.head()
 heartds.info()
@@ -109,7 +109,7 @@ model.fit(x_train, y_train)
 predicted = model.predict(x_test)
 print("The accuracy of SVC algorithm is: ", accuracy_score(y_test, predicted)*100, "%")
 
-# # Random Forest
+# Random Forest
 model = RandomForestRegressor(n_estimators = 100, random_state = 0)  
 model.fit(x_train, y_train)  
 predicted = model.predict(x_test)
@@ -117,6 +117,7 @@ print("The accuracy of Random Forest algorithm is : ", accuracy_score(y_test, pr
 
 
 
+# 
 
 
 
