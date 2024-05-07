@@ -4,7 +4,7 @@
 ### Heading 3
 # This is my first image
 
-![image](images/118607990_10158894281252022_2887958017542155055_n.jpg)
+#![image](images/118607990_10158894281252022_2887958017542155055_n.jpg)
 
 # This is a link to my github
 
