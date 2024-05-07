@@ -13,8 +13,10 @@ from sklearn import preprocessing
 from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import StandardScaler 
 from sklearn.model_selection import train_test_split
+from sklearn.model_selection import GridSearchCV
 from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestRegressor
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 warnings.filterwarnings("ignore")
 
@@ -103,24 +105,17 @@ x_train = scaler.fit_transform(x_train)
 x_test = scaler.transform(x_test)
 # x_train,x_test
 
+# Random Forest
+model = RandomForestRegressor(n_estimators = 100, random_state = 0)  
+model.fit(x_train, y_train)  
+predicted = model.predict(x_test)
+print("The accuracy of Random Forest algorithm is:", accuracy_score(y_test, predicted.round())*100, "%")
+
 # Support Vector Classification
 model = SVC()
 model.fit(x_train, y_train)
 predicted = model.predict(x_test)
 print("The accuracy of SVC algorithm is: ", accuracy_score(y_test, predicted)*100, "%")
-
-# Random Forest
-model = RandomForestRegressor(n_estimators = 100, random_state = 0)  
-model.fit(x_train, y_train)  
-predicted = model.predict(x_test)
-print("The accuracy of Random Forest algorithm is : ", accuracy_score(y_test, predicted.round())*100, "%")
-
-
-
-# 
-
-
-
 
 
 
