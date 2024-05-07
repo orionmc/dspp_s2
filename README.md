@@ -8,7 +8,8 @@
 
 
 
-### This is the link to my github repository whre is my project about predicting Heart attack 
+### This is the link to my github repository whre my project is hosted. 
+### Predicting Heart Attack Possibility 
 [Github link](https://github.com/orionmc/dspp_s2/blob/main/Interactive%20-%20Python-0.py.ipynb)
 
 
